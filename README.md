@@ -55,9 +55,9 @@ As a result, our productivity, code quality, and maintainability all increase.
 
 # ✨ Understanding TypeScript: Type Interface & Its Benefits
 
-## 📌 What is a Type Interface in TypeScript?
+## 📌 What is a Type Inference in TypeScript?
 
-A **type interface** in TypeScript is something that allows TypeScript to automatically understand or guess the type of a variable —  
+A **type inference** in TypeScript is something that allows TypeScript to automatically understand or guess the type of a variable —  
 you don’t always need to explicitly mention it.
 
 Even if you don’t write the type, TypeScript can **smartly deduce** what type it might be.
