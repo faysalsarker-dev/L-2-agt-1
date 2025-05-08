@@ -5,6 +5,8 @@ function formatString(input: string, toUpper?: boolean): string {
   return input.toLowerCase();
 }
 
+
+
 function filterByRating(
   items: { title: string; rating: number }[]
 ): { title: string; rating: number }[] {
@@ -12,9 +14,15 @@ function filterByRating(
   return result;
 }
 
+
+
+
 function concatenateArrays<T>(...arrays: T[][]): T[] {
   return arrays.flat();
 }
+
+
+
 
 class Vehicle {
   protected make: string;
@@ -53,10 +61,14 @@ function processValue(value: string | number): number {
   }
 }
 
+
+
+
 interface Product {
   name: string;
   price: number;
 }
+
 
 function getMostExpensiveProduct(products: Product[]): Product | null {
     
@@ -90,8 +102,8 @@ enum Day {
 
 
   async function squareAsync(n: number): Promise<number>{
-    if(n < 0) {
-      throw new Error("Negative number not allowed");
+    if(n < 0) {   
+      return Promise.reject(new Error("Negative number not allowed"))
     }
     
     return await new Promise((resolve) => {
@@ -104,9 +116,7 @@ enum Day {
 
 
 
-  squareAsync(-3)
-  .then((result) => console.log("Result:", result))
-  .catch((error) => console.error("Error:", error.message));  
+
 
 
   
